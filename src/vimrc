@@ -1,0 +1,51 @@
+set expandtab
+set smarttab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+set cursorline
+
+set guifont="MesloLGS NF":h16
+
+set number
+
+set encoding=utf8
+
+set ffs=unix,dos,mac
+
+set foldcolumn=2
+
+colorscheme molokai
+
+let g:molokai_original = 1
+
+let g:rehash256 = 1
+
+set noerrorbells
+set novisualbell
+
+set mouse=a
+
+let mapleader = ","
+
+map <space> /
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+call pathogen#infect()
+syntax on
+filetype plugin indent on
+
+autocmd VimEnter * NERDTree | wincmd p
+
+nmap <F6> :NERDTreeToggle<CR>
+
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#keymap#enabled = 0 
+let g:airline_section_z = "\ue0a1:%l/%L Col:%c"
+let g:airline#extensions#xkblayout#enabled = 0
+
